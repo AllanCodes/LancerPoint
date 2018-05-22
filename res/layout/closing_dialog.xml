@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/line_border"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="   Log out now?"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal" >
+
+        <Space
+            android:layout_column="2"
+            android:layout_gravity="fill_vertical"
+            android:layout_row="1" />
+
+        <Space />
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/line_border"
+            android:layout_gravity="left"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/line_border"
+            android:layout_gravity="fill_horizontal"
+            android:text="LogOut" />
+        
+    </GridLayout>
+
+</LinearLayout>
